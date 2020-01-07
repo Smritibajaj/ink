@@ -1,0 +1,51 @@
+@import './modules/color.scss';
+@import './modules/fonts.scss';
+
+.Header{
+    width: 1036px;
+    height: 49px;
+position: absolute;
+box-shadow: none !important;
+}
+.Header{
+    &.classes{background-color: $brand-color;}
+    &.menuButton{
+        background-color: $brand-color-400;
+    }
+}
+
+.App-logo{
+    height: 43px;
+    left: 84px;
+    top: 50px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 43px;
+    color: #2A59FF;
+}
+.title{
+    font-family: $base-font-family !important;
+    font-weight: bold !important;
+    line-height: 39px !important;
+    color:$brand-color-400;
+}
+
+.Tab >  div > div > button {
+font-family: Inter;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+color:$brand-color-400;
+}
+.App-button{
+    color:$brand-color-400 !important;
+    border-radius: 4px;
+    font-family: Inter;
+font-style: normal !important;
+font-weight: 500 !important;
+font-size: 16px !important;
+line-height: 24px !important;
+}

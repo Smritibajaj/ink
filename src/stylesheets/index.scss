@@ -1,0 +1,8 @@
+@import './modules/fonts.scss';
+@import './modules/color.scss';
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $brand-color;
+    font-family: 'Inter';
+  }

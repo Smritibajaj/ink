@@ -1,0 +1,7 @@
+@import './modules/color.scss';
+
+.container1 > div{
+background-color: $brand-color;
+height:700px;
+box-shadow:none;
+}
