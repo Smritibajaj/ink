@@ -23,12 +23,13 @@ div .header{
     font-weight: $font-weight-bold;
 }
 
-.App > div > div{
+.App > div > a{
     @include text-16;
     color:$brand-color-400;
     padding:8px;
     margin:8px;
     border:4px;
+    text-decoration: none;
     &:hover {
         border-bottom: 4px solid $brand-color-400;
         }

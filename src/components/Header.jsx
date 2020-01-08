@@ -2,6 +2,9 @@ import React , { Component } from 'react';
 import logo from '../Vector.png';
 import '../stylesheets/Header.scss';
 import AppBar from '@material-ui/core/AppBar';
+import { Switch, Route, Link } from "react-router-dom";
+import Home from './Home';
+import Security from './Security';
 export default class Header extends Component{
   render(){
     return(
@@ -14,13 +17,12 @@ export default class Header extends Component{
           </div>
 
           <div className="App App-row">
-            <div>HOME</div>
-            <div>API</div>
-            <div>CAREERS</div>
-            <div>BLOG</div>
-            <div>SECURITY</div>
+          <Link to={`/home`}><div>HOME</div></Link>
+          <Link to={`/home`}><div>API</div></Link>
+          <Link to={`/home`}><div>CAREERS</div></Link>
+          <Link to={`/home`}><div>BLOG</div></Link>
+            <Link to={`/security`}><div>SECURITY</div></Link>
           </div>
-
           <div className="App-row">
             <button>Login</button>
             <button>Signup</button>
