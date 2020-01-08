@@ -7,6 +7,7 @@ import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
+import img from '../image2.png';
 
 export default class Home extends Component {
 
@@ -55,71 +56,71 @@ export default class Home extends Component {
 
 
 
-                <Container>
-                    <Paper>
-                        <Grid container justify={'center'}>
-                            <Grid item xs={12} sm={8} >
-                                <div className="why">How does it works ?</div>
-                            </Grid>
+                <Container className="container2">
+                    <Grid container justify={'center'}>
+                        <Grid item xs={12} sm={8} >
+                            <div className="why">How does it works ?</div>
+                            <img src={img} />
                         </Grid>
-                        <Grid container spacing={3}>
-                            <Grid item xs={6}>
-                                <Typography align={'left'} component="h6" variant="subtitle1" gutterBottom>Step 1</Typography>
-                                <Typography align={'left'} component="h4" variant="h4" gutterBottom>Upload unlimited pages in a statement</Typography>
-                                <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>Choose your bank and upload your statement. There is no page limit for each statement</Typography>
-                            </Grid>
-                            <Grid item xs={6}>
-                                <Typography align={'left'} component="h6" variant="subtitle1" gutterBottom>Step 2</Typography>
-                                <Typography align={'left'} component="h4" variant="h4" gutterBottom>Analyse Upto date financial behaviour of the browser</Typography>
-                                <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>Get a true picture of the finanlcial behaviour of the borrower with our algorithm</Typography>
-                            </Grid>
+                    </Grid>
+                    <Grid container spacing={3}>
+                        <Grid item xs={6}>
+                            <div className="steps">Step 1</div>
+                            <div className="procedure">Upload unlimited pages in a statement</div>
+                            <div className="sub-procedure">Choose your bank and upload your statement. There is no page limit for each statement</div>
                         </Grid>
-                    </Paper>
+                        <Grid item xs={6}>
+                            <div className="steps">Step 2</div>
+                            <div className="procedure">Analyse Upto date financial behaviour of the browser</div>
+                            <div className="sub-procedure">Get a true picture of the finanlcial behaviour of the borrower with our algorithm</div>
+                        </Grid>
+                    </Grid>
                 </Container>
 
 
 
-                <Container>
-                    <Paper>
-                        <Grid container justify={'center'}>
-                            <Grid item >
-                                <Typography component="h1" variant="h4" gutterBottom>Pay only for what you use! Save a ton of money</Typography>
-                                <Grid container>
-                                    <Grid item xs={6}>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>No Lock in contract term</Typography>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>No Hidden Charges</Typography>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>No Sign-up free</Typography>
-                                    </Grid>
-                                    <Grid item xs={6}>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>No hefty upfront or integration fee</Typography>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom>No annual maintainence contract/fee</Typography>
-                                        <Typography align={'left'} component="h6" variant="subtitle" gutterBottom></Typography>
-                                    </Grid>
+                <Container className="pb-32">
+
+                    <Grid container justify={'center'} >
+                        <Grid item >
+                        <div className="why">Pay only for what you use!</div>
+                        <div className="why">Save a ton of money</div>
+                            <Grid container className="list-item">
+                                <Grid item xs={6}>
+                                    <div>No Lock in contract term</div>
+                                    <div>No Hidden Charges</div>
+                                    <div>No Sign-up free</div>
                                 </Grid>
-                                <Grid container justify={'center'}>
-                                    <TextField id="outlined-basic" label="Enter your email" variant="outlined" />
-                                    <Button variant="contained" color="primary">Get Started</Button>
+                                <Grid item xs={6}>
+                                    <div>No hefty upfront or integration fee</div>
+                                    <div>No annual maintainence contract/fee</div>
+                                    <div></div>
                                 </Grid>
                             </Grid>
-                        </Grid>
-                    </Paper>
-                </Container>
-
-
-
-                <Container>
-                    <Paper>
-                        <Grid container justify={'center'}>
-                            <Grid item >
-                                <Typography align={'center'} component="h1" variant="h4" gutterBottom >Why Inkredo</Typography>
+                            <Grid container justify={'center'}>
+                                <TextField id="outlined-basic" label="Enter your email" variant="outlined" />
+                                <Button variant="contained" color="primary" className="input-feild">Get Started</Button>
                             </Grid>
                         </Grid>
-                    </Paper>
+                    </Grid>
                 </Container>
-                <Container>
+
+
+
+                <Container className="container2">
+
+                    <Grid container justify={'center'}>
+                        <Grid item >
+                        <div className="why">Why Inkredo</div>
+                        </Grid>
+                    </Grid>
+
+                </Container>
+                <Container className="pb-32">
+                <h6 className="subheader1">Sign up now to analyse  <span>25 statements for free </span></h6>
                     <Grid container justify={'center'}>
                         <TextField id="outlined-basic" label="Enter your email" variant="outlined" />
-                        <Button variant="contained" color="primary">Get Started</Button>
+                        <Button variant="contained" color="primary" className="input-feild">Get Started</Button>
                     </Grid>
                 </Container>
             </>
