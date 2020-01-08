@@ -40,13 +40,13 @@ export default class Home extends Component {
                 <Container className="container1">
                     <Paper>
                         <Grid container justify={'center'}>
-                            <Grid item xs={12} sm={8} >
-                                <Typography align={'center'} component="h1" variant="h4">Make Tough credit calls accurately and effortlessly </Typography>
-                                <Typography align={'center'} variant="subtitle1" gutterBottom gutterBottom>Identify responsible borrowers from accurate banking transaction analysis</Typography>
-                                <Typography align={'center'} component="h6" variant="subtitle1" gutterBottom>Sign up now to analyse  25 statements for free</Typography>
+                            <Grid item xs={12} >
+                                <h1 className="header1">Make Tough credit calls accurately and effortlessly </h1>
+                                <h6 className="subheader">Identify responsible borrowers from accurate banking transaction analysis</h6>
+                                <h6 className="subheader1">Sign up now to analyse  <span>25 statements for free </span></h6>
                                 <Grid container justify={'center'}>
                                     <TextField id="outlined-basic" label="Enter your email" variant="outlined" />
-                                    <Button variant="contained" color="primary">Get Started</Button>
+                                    <Button variant="contained" color="primary" className="input-feild">Get Started</Button>
                                 </Grid>
                             </Grid>
                         </Grid>
@@ -59,7 +59,7 @@ export default class Home extends Component {
                     <Paper>
                         <Grid container justify={'center'}>
                             <Grid item xs={12} sm={8} >
-                                <Typography align={'center'} component="h1" variant="h4">How does it works</Typography>
+                                <div className="why">How does it works ?</div>
                             </Grid>
                         </Grid>
                         <Grid container spacing={3}>

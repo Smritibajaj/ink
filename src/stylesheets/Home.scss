@@ -1,7 +1,44 @@
 @import './modules/color.scss';
-
+@import './modules/fonts.scss';
+h1{
+    margin: 0;
+}
 .container1 > div{
 background-color: $brand-color;
 height:700px;
 box-shadow:none;
+}
+.header1{
+    @include text-72;
+    align-self: center;
+    text-align: center;
+    margin-top: 116px;
+}
+.subheader{
+@include text-24;
+color:$color-gray-700;
+margin-top: 20px;
+font-weight: $font-weight-normal;
+text-align: center;
+}
+.subheader1{
+    text-align: center;
+    @include text-24;
+    color:$color-gray-700;
+    margin-top: 116px;
+    text-align: center;
+    & > span{
+      color: $brand-color-400;;  
+    }
+}
+.input-feild{
+    margin: 0px 16px !important; 
+    height:56px;
+    background-color: $brand-color-400 !important;
+}
+
+.why{
+    @include text-56;
+    text-align: center;
+    margin-top: 16px;
 }

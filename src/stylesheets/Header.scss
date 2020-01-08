@@ -1,23 +1,57 @@
 @import './modules/color.scss';
 @import './modules/fonts.scss';
-
-.Header{
-    width: 1036px;
-    height: 49px;
-position: absolute;
-box-shadow: none !important;
+@import './modules/display.scss';
+h6{
+    margin: 0;
 }
-.Header{
-    &.classes{background-color: $brand-color;}
-    &.menuButton{
+div .header{
+    box-shadow: none;
+}
+.App-row{
+    @include flex-row;
+    background-color: $brand-color;
+}
+
+.App{
+    justify-content: space-around;
+    align-items: center;
+}
+
+.App > .Logo-text{
+    @include text-32;
+    color:$brand-color-400;
+    font-weight: $font-weight-bold;
+}
+
+.App > div > div{
+    @include text-16;
+    color:$brand-color-400;
+    padding:8px;
+    margin:8px;
+    border:4px;
+    &:hover {
+        border-bottom: 4px solid $brand-color-400;
+        }
+}
+
+.App-row > button {
+    @include text-16-normal;
+    padding:16px;
+    color:$brand-color-400;
+    border-radius: 5%;
+    border: none;
+    margin:8px;
+    &:hover{
+        color:$brand-color;
         background-color: $brand-color-400;
     }
 }
 
 .App-logo{
+    position: absolute;
     height: 43px;
     left: 84px;
-    top: 50px;
+    top: 24px;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -48,4 +82,33 @@ font-style: normal !important;
 font-weight: 500 !important;
 font-size: 16px !important;
 line-height: 24px !important;
+}
+
+
+.toolbar{
+    justify-content: space-evenly;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+
+.box > div{
+    padding:8px;
+    font-family: Inter;
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #2A59FF;
+
+}
+
+.brand-name{
+@include text-32;
+color: #2A59FF;
+height:20px;
 }
