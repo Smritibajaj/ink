@@ -45,6 +45,9 @@ text-align: center;
     height:56px;
     background-color: $brand-color-400 !important;
 }
+.footer-text{
+    @include text-32;
+}
 
 .why{
     @include text-56;
@@ -65,4 +68,14 @@ text-align: center;
 .list-item{
     @include text-20;
     color:$color-gray-700;
+}
+
+.background-600{
+    background-color: $brand-color-600;
+    padding:32px;
+    color:white;
+}
+
+.highlight{
+    font-weight: $font-weight-bold;
 }

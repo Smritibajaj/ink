@@ -111,7 +111,7 @@ export default class Home extends Component {
 
                     <Grid container justify={'center'}>
                         <Grid item >
-                        <div className="why">Why Inkredo</div>
+                        <div className="why">Why Inkredo ?</div>
                         </Grid>
                     </Grid>
 
