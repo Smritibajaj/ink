@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import { Switch, Route, Link } from "react-router-dom";
 import Home from './Home';
 import Security from './Security';
+import Blog from './Blog';
 export default class Header extends Component{
   render(){
     return(
@@ -18,10 +19,10 @@ export default class Header extends Component{
 
           <div className="App App-row">
           <Link to={`/home`}><div>HOME</div></Link>
-          <Link to={`/home`}><div>API</div></Link>
-          <Link to={`/home`}><div>CAREERS</div></Link>
-          <Link to={`/home`}><div>BLOG</div></Link>
-            <Link to={`/security`}><div>SECURITY</div></Link>
+          <Link to={`/api`}><div>API</div></Link>
+          <Link to={`/careers`}><div>CAREERS</div></Link>
+          <Link to={`/blog`}><div>BLOG</div></Link>
+          <Link to={`/security`}><div>SECURITY</div></Link>
           </div>
           <div className="App-row">
             <button>Login</button>
